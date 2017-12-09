@@ -7,7 +7,7 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
       'ember-cli-prerender': {
         sitemap: {
-          rootUrl: 'http://localhost/'
+          rootUrl: 'https://ember-app-boilerplate.herokuapp.com/'
         },
       }
   });
