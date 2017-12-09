@@ -1,10 +1,15 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var map = require('broccoli-stew').map;
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+      'ember-cli-prerender': {
+        sitemap: {
+          rootUrl: 'http://localhost/'
+        },
+      }
   });
 
   // Use `app.import` to add additional libraries to the generated
